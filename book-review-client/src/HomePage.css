@@ -1,0 +1,105 @@
+/* General styles for the homePage */
+.homePage {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  /* Left-side styles */
+  .left-side {
+    flex: 1 1 20%;
+    max-width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+  }
+  
+  /* Category item styles */
+  .category-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .category-item.selected {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .category-item:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  /* Right-side styles */
+  .right-side {
+    flex: 1 1 75%;
+    max-width: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Top section for the search bar and button */
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar styles */
+  .search-book {
+    flex: 1;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Add Book button styles */
+  .top button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .top button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Bottom section for the book list */
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .homePage {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      max-width: 100%;
+    }
+  
+    .top {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .search-book {
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+  

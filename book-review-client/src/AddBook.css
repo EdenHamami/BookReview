@@ -1,0 +1,115 @@
+/* Container styles */
+.add-book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+  }
+  
+  /* Form container styles */
+  .add-book {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .add-book h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form element styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="file"],
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="file"]:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+  }
+  
+  .form-group input[type="file"]:disabled,
+  .form-group input[type="text"]:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .add-book {
+      padding: 20px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .submit-button {
+      padding: 12px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .add-book {
+      padding: 15px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .submit-button {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
